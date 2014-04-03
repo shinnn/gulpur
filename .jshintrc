@@ -1,0 +1,9 @@
+{
+  "camelcase": true,
+  "trailing": true,
+  "indent": 2,
+  "globalstrict": true,
+  "browser": false,
+  "node": true,
+  "esnext": true
+}

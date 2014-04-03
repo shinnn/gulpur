@@ -1,0 +1,51 @@
+{
+  "name": "gulpur",
+  "version": "0.0.0",
+  "description": "gulp with ES.next",
+  "main": "index.js",
+  "bin": {
+    "gulp": "index.js"
+  },
+  "scripts": {
+    "test": "node index.js lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/gulpur.git"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "email": "snnskwtnb@gmail.com",
+    "url": "https://github.com/shinnn"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/shinnn/gulpur/issues"
+  },
+  "homepage": "https://github.com/shinnn/gulpur",
+  "keywords": [
+    "gulpfriendly",
+    "gulp",
+    "ecmascript",
+    "es6",
+    "ES.next",
+    "harmony",
+    "compiler",
+    "transpiler"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "minimist": "0.0.8",
+    "traceur": "0.0.32"
+  },
+  "devDependencies": {
+    "jshint-stylish": "^0.1.5",
+    "gulp-jshint": "^1.5.3",
+    "gulp": "^3.6.0",
+    "gulp-jsonlint": "0.0.3"
+  }
+}
