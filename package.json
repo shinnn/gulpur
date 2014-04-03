@@ -1,10 +1,10 @@
 {
   "name": "gulpur",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp with ES.next",
   "main": "index.js",
   "bin": {
-    "gulpur": "index.js"
+    "gulpur": "./index.js"
   },
   "scripts": {
     "test": "node index.js lint"
