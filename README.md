@@ -5,19 +5,20 @@
 [![Dependency Status](https://david-dm.org/shinnn/gulpur.svg?theme=shields.io)](https://david-dm.org/shinnn/gulpur)
 [![devDependency Status](https://david-dm.org/shinnn/gulpur/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/gulpur#info=devDependencies)
 
-[gulp](http://gulpjs.com/) with ES.next
+[gulp](http://gulpjs.com/) with [ES.next](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts), using [Traceur](https://github.com/google/traceur-compiler)
 
 ## Installation
 
 Install with [npm](https://www.npmjs.org/). (Make sure you have installed [Node](http://nodejs.org/).)
 
 ```
-npm install -g gulpur
+npm install -g gulp gulpur
 ```
 
 ## Usage
 
-(*Coming soon.*)
+1. Write your [gulpfile.js](https://github.com/gulpjs/gulp#sample-gulpfile) in ECMASCript 6 syntax.
+1. Run `gulpur` command.
 
 ## LICENSE
 
