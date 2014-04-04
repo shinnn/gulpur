@@ -16,7 +16,7 @@ var argv = minimist(process.argv, {
   }
 });
 
-var gulpfilePath = path.resolve(argv.gulpfile);
+var gulpfile = path.resolve(argv.gulpfile);
 
 traceur.require.makeDefault(function(filename) {
   return filename === gulpfile;
