@@ -7,7 +7,7 @@
     "gulpur": "./index.js"
   },
   "scripts": {
-    "test": "node index.js lint",
+    "test": "node index.js test",
     "prepublish": "npm test"
   },
   "repository": {
@@ -47,6 +47,9 @@
     "jshint-stylish": "^0.1.5",
     "gulp-jshint": "^1.5.3",
     "gulp": "^3.6.0",
-    "gulp-jsonlint": "0.0.3"
+    "gulp-jsonlint": "0.0.3",
+    "gulp-concat": "^2.2.0",
+    "gulp-mocha": "^0.4.1",
+    "gulp-rimraf": "0.0.9"
   }
 }
