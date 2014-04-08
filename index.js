@@ -8,18 +8,9 @@
 
 var minimist = require('minimist');
 var traceur = require('traceur');
-var path = require('path');
-
-var argv = minimist(process.argv, {
-  default: {
-    gulpfile: 'gulpfile.js'
-  }
-});
-
-var gulpfile = path.resolve(argv.gulpfile);
 
 traceur.require.makeDefault(function(filename) {
-  return filename === gulpfile;
+  return filename.indexOf('/node_modules') === -1;
 });
 
 require('gulp/bin/gulp.js');
