@@ -38,7 +38,7 @@ var banner = [
   '/*!',
   ' * example.js',
   ' * Licensed under ' + license,
-  ' */',
+  ' */'
 ].join('\n');
 
 gulp.task('script', function() {
