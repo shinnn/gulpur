@@ -6,7 +6,6 @@
 
 'use strict';
 
-var minimist = require('minimist');
 var traceur = require('traceur');
 
 traceur.require.makeDefault(function(filename) {

@@ -40,7 +40,6 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "minimist": "0.0.8",
     "traceur": "0.0.32"
   },
   "devDependencies": {
