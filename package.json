@@ -1,6 +1,6 @@
 {
   "name": "gulpur",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "gulp with ES.next",
   "main": "index.js",
   "bin": {
