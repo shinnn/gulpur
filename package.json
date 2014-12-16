@@ -1,6 +1,6 @@
 {
   "name": "gulpur",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "gulp with Traceur gulpfiles",
   "main": "index.js",
   "bin": "./index.js",
@@ -29,8 +29,8 @@
     "node": ">=0.10"
   },
   "preferGlobal": true,
-  "dependencies": {
-    "traceur": "0.0.32"
+  "peerDependencies": {
+    "traceur": ">= 0.0.79 < 1"
   },
   "devDependencies": {
     "jshint-stylish": "^0.1.5",
@@ -39,6 +39,10 @@
     "gulp-jsonlint": "0.0.3",
     "gulp-concat": "^2.2.0",
     "gulp-mocha": "^0.4.1",
-    "gulp-rimraf": "0.0.9"
+    "gulp-rimraf": "0.0.9",
+    "traceur": "0.0.79"
+  },
+  "dependencies": {
+    "traceur-runner": "^1.0.2"
   }
 }
