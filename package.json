@@ -2,8 +2,11 @@
   "name": "gulpur",
   "version": "0.0.6",
   "description": "gulp with Traceur gulpfiles",
-  "main": "index.js",
-  "bin": "./index.js",
+  "bin": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "node index.js test",
     "prepublish": "npm test"
