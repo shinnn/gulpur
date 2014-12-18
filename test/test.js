@@ -14,7 +14,10 @@ describe('gulpur', () => {
     
     gulpur.on('close', () => {
       fs.readFile('test/actual/result.txt', (err, data) => {
-        if (err) done(err);
+        if (err) {
+          done(err);
+          return;
+        }
         assert.strictEqual(data.toString(), 'foo,bar');
         done();
       });

@@ -8,8 +8,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node index.js test",
-    "prepublish": "npm test"
+    "test": "node index.js test"
   },
   "repository": "shinnn/gulpur",
   "author": {
@@ -47,5 +46,10 @@
   },
   "dependencies": {
     "traceur-runner": "^1.0.2"
+  "jscsConfig": {
+    "preset": "google",
+    "esnext": true,
+    "maximumLineLength": 98,
+    "validateLineBreaks": "LF"
   }
 }
