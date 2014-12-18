@@ -4,7 +4,7 @@ var spawn = require('child_process').spawn;
 
 var $ = require('gulp-load-plugins')();
 var gulp = require('gulp');
-var rimraf = require('rimraf');
+var rimraf = require('rimraf-promise');
 var stylish = require('jshint-stylish');
 
 gulp.task('lint', () => {
@@ -15,15 +15,13 @@ gulp.task('lint', () => {
     .pipe($.jshint.reporter('fail'));
 });
 
-gulp.task('clean', cb => rimraf('test/actual', cb));
+gulp.task('clean', () => rimraf('test/tmp.txt'));
 
 gulp.task('test', ['clean', 'lint'], cb => {
-  var cp = spawn('node', ['test/test.js'], {
-    stdio: [null, process.stdout, process.stderr]
-  });
-  cp.on('close', function(code) {
-    cb(code ? new Error('Exited with code ' + code) : null);
-  });
+  spawn('node', ['test/test.js'], {
+    stdio: 'inherit'
+  })
+  .on('close', code => cb(code ? new Error('Exited with code ' + code) : null));
 });
 
 gulp.task('watch', () => {

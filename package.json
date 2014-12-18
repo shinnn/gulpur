@@ -45,7 +45,7 @@
     "gulp-jshint": "^1.5.3",
     "gulp-load-plugins": "^0.8.0",
     "jshint-stylish": "^1.0.0",
-    "rimraf": "^2.2.8",
+    "rimraf-promise": "^1.0.0",
     "tape": "^3.0.3",
     "traceur": "^0.0.79"
   },
