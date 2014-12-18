@@ -1,34 +1,30 @@
 'use strict';
 
+var $ = require('gulp-load-plugins')();
 var gulp = require('gulp');
-var jshint = require('gulp-jshint');
-var jsonlint = require('gulp-jsonlint');
-var mocha = require('gulp-mocha');
-var rimraf = require('gulp-rimraf');
+var rimraf = require('rimraf');
 var stylish = require('jshint-stylish');
 
-gulp.task('lint', (cb) => {
-  gulp.src(['*.js'])
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter(stylish));
+gulp.task('lint', () => {
+  gulp.src('*.js')
+    .pipe($.jscs('package.json'))
+    .pipe($.jshint('.jshintrc'))
+    .pipe($.jshint.reporter(stylish))
+    .pipe($.jshint.reporter('fail'));
   gulp.src(['*.json'])
-    .pipe(jsonlint())
-    .pipe(jsonlint.reporter());
-  cb();
+    .pipe($.jsonlint())
+    .pipe($.jsonlint.reporter());
 });
 
-gulp.task('clean', () => {
-  gulp.src(['test/actual'], {read: false})
-    .pipe(rimraf({force: true}));
-});
+gulp.task('clean', cb => rimraf('test/actual', cb));
 
 gulp.task('test', ['clean', 'lint'], () => {
-  gulp.src(['test/test.js'])
-    .pipe(mocha({reporter: 'spec'}));
+  return gulp.src(['test/test.js'], {read: false})
+    .pipe($.mocha({reporter: 'spec'}));
 });
 
 gulp.task('watch', () => {
   gulp.watch(['*.{js,json}'], ['test']);
 });
 
-gulp.task('default', ['test', 'watch']); 
+gulp.task('default', ['test', 'watch']);
