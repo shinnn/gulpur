@@ -4,6 +4,6 @@ var {writeFile} = require('graceful-fs');
 
 var gulp = require('gulp');
 
-gulp.task('default', cb => {
+gulp.task('write', cb => {
   writeFile('tmp.txt', 'foo', err => cb(err));
 });

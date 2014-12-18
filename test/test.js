@@ -10,7 +10,7 @@ var pkg = require('../package.json');
 test('gulpur', function(t) {
   t.plan(2);
 
-  spawn('node', [pkg.bin, '--gulpfile', 'test/fixture_gulpfile.js'], {
+  spawn('node', [pkg.bin, 'write', '--gulpfile', 'test/fixture_gulpfile.js'], {
     stdio: 'inherit'
   })
   .on('close', function(code) {
