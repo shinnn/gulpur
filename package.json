@@ -1,6 +1,6 @@
 {
   "name": "gulpur",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "gulp with Traceur gulpfiles",
   "bin": "index.js",
   "files": [
