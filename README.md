@@ -2,6 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/gulpur.svg?style=flat)](https://www.npmjs.com/package/gulpur)
 [![Build Status](https://img.shields.io/travis/shinnn/gulpur.svg?style=flat)](https://travis-ci.org/shinnn/gulpur)
+[![Build status](https://ci.appveyor.com/api/projects/status/ayfs4lr83qlgjivb?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/gulpur)
 [![Dependency Status](https://david-dm.org/shinnn/gulpur.svg?style=flat)](https://david-dm.org/shinnn/gulpur)
 [![devDependency Status](https://david-dm.org/shinnn/gulpur/dev-status.svg?style=flat)](https://david-dm.org/shinnn/gulpur#info=devDependencies)
 
